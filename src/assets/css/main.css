@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.section {
+    @apply mb-28;
+  }
+  
+  .active-link {
+    @apply text-theme-purple;
+  }
+  
+  .header {
+    @apply flex flex-col py-3 mb-4 justify-between z-50;
+  }
+  
+  .hero {
+    
+  }
+  
+  .portofolio-card:hover .img-hover {
+    @apply opacity-25;
+  }
+  
+  @media (min-width: 1024px) {
+    .header {
+      @apply  w-full flex-row py-6 px-10 mt-2 mb-4 mx-auto items-center content-center border-b border-gray-100 z-50 sticky top-0 bg-white;
+    }
+
+    .hero {
+        display: flex;
+        flex-direction: row;
+        margin-top: 5rem;
+        height: 70vh;
+        /* padding: 2rem; */
+        /* @apply flex-row mx-auto mt-8 h-96; */
+      }
+
+      .hero-image{
+        width: 100%;
+        height: 25rem;
+      }
+
+  }
